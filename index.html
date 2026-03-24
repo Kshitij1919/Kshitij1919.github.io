@@ -378,168 +378,390 @@ END DROPDOWN -->
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Case studies and builds are being documented. Real projects — real systems. Check back soon.</p>
       </div><!-- End Section Title -->
 
-      <div class="container">
+      <!-- PORTFOLIO ITEMS PLACEHOLDER — replace when screenshots/recordings are ready -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 justify-content-center">
 
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <!-- Card: Tridasha — LIVE -->
+          <div class="col-12" data-aos="fade-up">
+            <div style="
+              background: #0e1520;
+              border: 1px solid rgba(0,229,255,0.25);
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 0 32px rgba(0,229,255,0.07);
+              display: flex;
+              flex-wrap: wrap;
+            ">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+              <!-- TOP ROW: Gallery + Intro side by side -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- Gallery Column -->
+              <div style="flex: 0 0 100%; max-width: 100%;" class="tridasha-gallery-col">
+                <style>
+                  @media(min-width: 992px) {
+                    .tridasha-gallery-col { flex: 0 0 48% !important; max-width: 48% !important; }
+                    .tridasha-intro-col   { flex: 0 0 52% !important; max-width: 52% !important; }
+                    .tridasha-case-col    { flex: 0 0 100% !important; max-width: 100% !important; }
+                  }
+                </style>
+                <a href="assets/img/portfolio/tridasha/tridasha-1.jpg"
+                   data-gallery="tridasha-gallery"
+                   data-glightbox="title: Tridasha — Locomotion &amp; Combat Systems"
+                   class="glightbox"
+                   style="display:block; position:relative; overflow:hidden;">
+                  <img src="assets/img/portfolio/tridasha/tridasha-1.jpg"
+                       alt="Tridasha - Village Run"
+                       class="img-fluid"
+                       style="width:100%; height:260px; object-fit:cover; display:block; transition: transform 0.4s ease;"
+                       onmouseover="this.style.transform='scale(1.04)'"
+                       onmouseout="this.style.transform='scale(1)'">
+                  <span style="
+                    position:absolute; bottom:12px; right:12px;
+                    background: rgba(0,0,0,0.65); color: #00e5ff;
+                    font-size: 11px; font-weight: 600; padding: 4px 10px;
+                    border-radius: 50px; border: 1px solid rgba(0,229,255,0.4);
+                    backdrop-filter: blur(4px);
+                  ">🖼 View Gallery (5)</span>
+                </a>
+                <a href="assets/img/portfolio/tridasha/tridasha-2.jpg" data-gallery="tridasha-gallery" data-glightbox="title: Tridasha — Misty Ruins Exploration" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/tridasha/tridasha-3.jpg" data-gallery="tridasha-gallery" data-glightbox="title: Tridasha — Forest Stealth Encounter" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/tridasha/tridasha-4.jpg" data-gallery="tridasha-gallery" data-glightbox="title: Tridasha — Jungle Quest" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/tridasha/tridasha-5.jpg" data-gallery="tridasha-gallery" data-glightbox="title: Tridasha — Assassination at the Idol" class="glightbox" style="display:none;"></a>
+                <div style="display:flex; gap:4px; padding:4px;">
+                  <a href="assets/img/portfolio/tridasha/tridasha-2.jpg" data-gallery="tridasha-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/tridasha/tridasha-2.jpg" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="Tridasha screenshot 2">
+                  </a>
+                  <a href="assets/img/portfolio/tridasha/tridasha-3.jpg" data-gallery="tridasha-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/tridasha/tridasha-3.jpg" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="Tridasha screenshot 3">
+                  </a>
+                  <a href="assets/img/portfolio/tridasha/tridasha-4.jpg" data-gallery="tridasha-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/tridasha/tridasha-4.jpg" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="Tridasha screenshot 4">
+                  </a>
+                  <a href="assets/img/portfolio/tridasha/tridasha-5.jpg" data-gallery="tridasha-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/tridasha/tridasha-5.jpg" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="Tridasha screenshot 5">
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+              </div><!-- End Gallery Column -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- Intro Column (top right) -->
+              <div class="tridasha-intro-col" style="flex: 0 0 100%; max-width: 100%; padding: 28px 28px 20px;">
+
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+                  <span style="
+                    background: rgba(0,229,255,0.1); color: #00e5ff;
+                    border: 1px solid rgba(0,229,255,0.35); border-radius: 50px;
+                    font-size: 11px; font-weight: 600; letter-spacing: 1px;
+                    text-transform: uppercase; padding: 3px 12px;
+                  ">Action / PC</span>
+                  <span style="
+                    background: rgba(0,229,255,0.06); color: rgba(0,229,255,0.7);
+                    border: 1px solid rgba(0,229,255,0.2); border-radius: 50px;
+                    font-size: 11px; font-weight: 600; letter-spacing: 1px;
+                    text-transform: uppercase; padding: 3px 12px;
+                  ">Koolgen Interactives · 2023–2024</span>
+                  
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4 style="color:#ffffff; font-weight:700; margin-bottom:6px; font-size:22px;">Tridasha</h4>
+                <p style="color:rgba(255,255,255,0.45); font-size:12px; margin-bottom:16px; font-style:italic;">
+                  Action-adventure · Third-person · Unreal Engine 5 · Showcased at IGDC 2023
+                </p>
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:0;">
+                  Tridasha needed a character that felt grounded during open-world traversal and threatening in combat —
+                  without either state bleeding into the other visually. I owned the animation architecture and stealth
+                  system end-to-end, mostly solo.
+                </p>
+
+              </div><!-- End Intro Column -->
+
+              <!-- BOTTOM ROW: Case study full width -->
+              <div class="tridasha-case-col" style="flex: 0 0 100%; max-width: 100%; padding: 0 28px 28px; border-top: 1px solid rgba(0,229,255,0.08); margin-top: 20px; padding-top: 24px;">
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:14px;">
+                  <strong style="color:#00e5ff;">Animation Layers:</strong>
+                  The Animation Blueprint used a state-driven Linked Anim Layer approach. A Boolean flag
+                  (<code style="background:rgba(0,229,255,0.08); color:#00e5ff; padding:1px 5px; border-radius:3px;">bIsInCombat</code>)
+                  swapped which layer was active — base Locomotion for traversal,
+                  Combat Locomotion for armed states — so each could be tuned independently without
+                  breaking the other. Transitions stayed at a stable 60fps because upper-body and
+                  lower-body poses never competed for the same blend space.
+                </p>
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:20px;">
+                  <strong style="color:#00e5ff;">Stealth &amp; Assassination:</strong>
+                  Detection layered line-of-sight traces with noise events (footsteps, weapon draws),
+                  so enemies reacted to sound before sight. The assassination prompt used a
+                  <strong style="color:rgba(255,255,255,0.9);">dot product check</strong> against the
+                  enemy's forward unit vector — a result between 0.5 and 1.0 confirmed the player was
+                  in the rear arc. But player intent came first: if the combat weapon was already drawn,
+                  the system respected that state and forced a normal attack, even from behind.
+                  No unfair auto-executes.
+                </p>
+
+                <!-- Tech pills -->
+                <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px;">
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">UE5</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">C++</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Blueprints</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Linked Anim Layers</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Behavior Trees</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Stealth System</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Dot Product Logic</span>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <a href="https://store.steampowered.com/app/2640810/Tridasha/" target="_blank" rel="noopener noreferrer" style="
+                  display: inline-block; background: transparent; color: #00e5ff;
+                  border: 1px solid rgba(0,229,255,0.5); border-radius: 50px;
+                  font-size: 13px; font-weight: 600; padding: 8px 22px;
+                  text-decoration: none; transition: background 0.2s, box-shadow 0.2s;
+                " onmouseover="this.style.background='rgba(0,229,255,0.1)'; this.style.boxShadow='0 0 16px rgba(0,229,255,0.2)'"
+                   onmouseout="this.style.background='transparent'; this.style.boxShadow='none'">
+                  View on Steam ↗
+                </a>
+
+              </div><!-- End Case Study Row -->
+
+            </div>
+          </div><!-- End Card: Tridasha -->
+          <!-- Card: CBG Cricket Battleground — LIVE -->
+          <div class="col-lg-12 col-md-12" data-aos="fade-up">
+            <div style="
+              background: #0e1520;
+              border: 1px solid rgba(255,77,255,0.2);
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 0 32px rgba(255,77,255,0.05);
+              display: flex;
+              flex-wrap: wrap;
+            ">
+
+              <!-- TOP ROW: Gallery + Intro side by side -->
+
+              <!-- Gallery Column -->
+              <div style="flex: 0 0 100%; max-width: 100%;" class="cbg-gallery-col">
+                <style>
+                  @media(min-width: 992px) {
+                    .cbg-gallery-col { flex: 0 0 48% !important; max-width: 48% !important; }
+                    .cbg-intro-col   { flex: 0 0 52% !important; max-width: 52% !important; }
+                    .cbg-case-col    { flex: 0 0 100% !important; max-width: 100% !important; }
+                  }
+                </style>
+                <a href="assets/img/portfolio/cricbattle/cricbattle-1.webp"
+                   data-gallery="cricbattle-gallery"
+                   data-glightbox="title: CBG Cricket Battleground — Main Menu &amp; Player Hub"
+                   class="glightbox"
+                   style="display:block; position:relative; overflow:hidden;">
+                  <img src="assets/img/portfolio/cricbattle/cricbattle-1.webp"
+                       alt="CBG Cricket Battleground - Main Menu"
+                       style="width:100%; height:260px; object-fit:cover; display:block; transition: transform 0.4s ease;"
+                       onmouseover="this.style.transform='scale(1.04)'"
+                       onmouseout="this.style.transform='scale(1)'">
+                  <span style="
+                    position:absolute; bottom:12px; right:12px;
+                    background: rgba(0,0,0,0.65); color: #ff4dff;
+                    font-size: 11px; font-weight: 600; padding: 4px 10px;
+                    border-radius: 50px; border: 1px solid rgba(255,77,255,0.4);
+                    backdrop-filter: blur(4px);
+                  ">🖼 View Gallery (5)</span>
+                </a>
+                <a href="assets/img/portfolio/cricbattle/cricbattle-2.webp" data-gallery="cricbattle-gallery" data-glightbox="title: CBG — Batting UI &amp; Shot Selection" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/cricbattle/cricbattle-3.webp" data-gallery="cricbattle-gallery" data-glightbox="title: CBG — Stadium &amp; Fielder Positions" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/cricbattle/cricbattle-4.webp" data-gallery="cricbattle-gallery" data-glightbox="title: CBG — Player Stats (On-Demand Fetch)" class="glightbox" style="display:none;"></a>
+                <a href="assets/img/portfolio/cricbattle/cricbattle-5.webp" data-gallery="cricbattle-gallery" data-glightbox="title: CBG — Fielder Action" class="glightbox" style="display:none;"></a>
+                <div style="display:flex; gap:4px; padding:4px;">
+                  <a href="assets/img/portfolio/cricbattle/cricbattle-2.webp" data-gallery="cricbattle-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/cricbattle/cricbattle-2.webp" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="CBG screenshot 2">
+                  </a>
+                  <a href="assets/img/portfolio/cricbattle/cricbattle-3.webp" data-gallery="cricbattle-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/cricbattle/cricbattle-3.webp" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="CBG screenshot 3">
+                  </a>
+                  <a href="assets/img/portfolio/cricbattle/cricbattle-4.webp" data-gallery="cricbattle-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/cricbattle/cricbattle-4.webp" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="CBG screenshot 4">
+                  </a>
+                  <a href="assets/img/portfolio/cricbattle/cricbattle-5.webp" data-gallery="cricbattle-gallery" class="glightbox" style="flex:1; display:block; overflow:hidden; border-radius:4px; height:60px;">
+                    <img src="assets/img/portfolio/cricbattle/cricbattle-5.webp" style="width:100%; height:60px; object-fit:cover; opacity:0.75; transition:opacity 0.2s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.75" alt="CBG screenshot 5">
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+              </div><!-- End Gallery Column -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              <!-- Intro Column (top right) -->
+              <div class="cbg-intro-col" style="flex: 0 0 100%; max-width: 100%; padding: 28px 28px 20px;">
+
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+                  <span style="
+                    background: rgba(255,77,255,0.1); color: #ff4dff;
+                    border: 1px solid rgba(255,77,255,0.3); border-radius: 50px;
+                    font-size: 11px; font-weight: 600; letter-spacing: 1px;
+                    text-transform: uppercase; padding: 3px 12px;
+                  ">Sports / Mobile</span>
+                  <span style="
+                    background: rgba(255,77,255,0.06); color: rgba(255,77,255,0.65);
+                    border: 1px solid rgba(255,77,255,0.2); border-radius: 50px;
+                    font-size: 11px; font-weight: 600; text-transform: uppercase; padding: 3px 12px;
+                  ">Nextwhat Games · 2025</span>
+                  <span style="
+                    background: rgba(0,200,80,0.1); color: #00c850;
+                    border: 1px solid rgba(0,200,80,0.3); border-radius: 50px;
+                    font-size: 11px; font-weight: 600; padding: 3px 12px;
+                  ">✔ Live on Play Store</span>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4 style="color:#ffffff; font-weight:700; margin-bottom:6px; font-size:22px;">CBG Cricket Battleground</h4>
+                <p style="color:rgba(255,255,255,0.45); font-size:12px; margin-bottom:14px; font-style:italic;">
+                  Multiplayer Cricket · Android · Unreal Engine 5 · Backend-Integrated
+                </p>
+
+                <div style="
+                  background: rgba(255,153,0,0.07);
+                  border-left: 3px solid rgba(255,153,0,0.6);
+                  border-radius: 0 6px 6px 0;
+                  padding: 10px 14px;
+                  margin-bottom: 16px;
+                ">
+                  <p style="color:rgba(255,200,100,0.9); font-size:12px; line-height:1.65; margin:0; font-weight:700;">
+                    ⚠ Note: The Play Store build reflects the current public version. Auth and RMG systems I built were removed following regulatory changes in India — core gameplay remains intact.
+                  </p>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:0;">
+                  My ownership on CBG was the backend integration layer — building the C++ systems
+                  that connected UE5 to a live REST backend handling auth, player data, and real-money currency flows.
+                </p>
+
+              </div><!-- End Intro Column -->
+
+              <!-- BOTTOM ROW: Case study full width -->
+              <div class="cbg-case-col" style="flex: 0 0 100%; max-width: 100%; padding: 0 28px 28px; border-top: 1px solid rgba(255,77,255,0.08); margin-top: 20px; padding-top: 24px;">
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:14px;">
+                  <strong style="color:#ff4dff;">Auth & Session Persistence:</strong>
+                  After OTP login, the server response returned an
+                  <code style="background:rgba(255,77,255,0.08); color:#ff4dff; padding:1px 5px; border-radius:3px;">AccessToken</code>
+                  and
+                  <code style="background:rgba(255,77,255,0.08); color:#ff4dff; padding:1px 5px; border-radius:3px;">CustomerID</code>
+                  which I persisted to a
+                  <code style="background:rgba(255,77,255,0.08); color:#ff4dff; padding:1px 5px; border-radius:3px;">USaveGame</code>
+                  slot. On relaunch, the game reads the slot and fires an <strong style="color:rgba(255,255,255,0.9);">auto-login validation API</strong> —
+                  only restoring the session if the server <strong style="color:rgba(255,255,255,0.9);">confirms the token is still valid</strong>.
+                </p>
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:14px;">
+                  <strong style="color:#ff4dff;">Layered API Architecture:</strong>
+                  HTTP calls never touched gameplay classes directly. A dedicated helper class
+                  handled request construction and <strong style="color:rgba(255,255,255,0.9);">two-step response validation</strong> (HTTP status + JSON body code).
+                  A manager layer owned raw HTTP callbacks, while a controller layer
+                  exposed <strong style="color:rgba(255,255,255,0.9);">Blueprint-assignable delegates</strong> so UI could react to async responses without knowing HTTP existed.
+                </p>
+
+                <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:20px;">
+                  <strong style="color:#ff4dff;">On-Demand Data Fetch:</strong>
+                  Player stats and match history were <strong style="color:rgba(255,255,255,0.9);">intentionally not loaded at game start</strong>.
+                  Each UI section fired its own API <strong style="color:rgba(255,255,255,0.9);">only when opened</strong> — keeping startup clean
+                  and avoiding <strong style="color:rgba(255,255,255,0.9);">redundant network calls</strong> for data the player may never view.
+                </p>
+
+                <!-- Tech pills -->
+                <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px;">
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">UE5 HTTP Module</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">C++</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">REST API Integration</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">USaveGame Auth</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">JSON Serialization</span>
+                  <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Delegate Pattern</span>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <!-- Buttons -->
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                  <a href="https://play.google.com/store/apps/details?id=com.cbg.esports" target="_blank" rel="noopener noreferrer" style="
+                    display:inline-block; background:transparent; color:#ff4dff;
+                    border:1px solid rgba(255,77,255,0.5); border-radius:50px;
+                    font-size:13px; font-weight:600; padding:8px 22px;
+                    text-decoration:none; transition: background 0.2s, box-shadow 0.2s;
+                  " onmouseover="this.style.background='rgba(255,77,255,0.1)'; this.style.boxShadow='0 0 16px rgba(255,77,255,0.2)'"
+                     onmouseout="this.style.background='transparent'; this.style.boxShadow='none'">
+                    Play Store ↗
+                  </a>
+                  <a href="https://cricbattlegame.com/" target="_blank" rel="noopener noreferrer" style="
+                    display:inline-block; background:transparent; color:rgba(255,255,255,0.5);
+                    border:1px solid rgba(255,255,255,0.15); border-radius:50px;
+                    font-size:13px; font-weight:600; padding:8px 22px;
+                    text-decoration:none; transition: background 0.2s;
+                  " onmouseover="this.style.background='rgba(255,255,255,0.05)'" onmouseout="this.style.background='transparent'">
+                    Website ↗
+                  </a>
                 </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+              </div><!-- End Case Study Row -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+            </div>
+          </div><!-- End Card: CBG Cricket Battleground -->
+          <!-- Card: GAS Project -->
+          <div class="col-lg-4 col-md-8 mx-auto">
+            <div class="portfolio-coming-card" style="
+              background: #0e1520;
+              border: 1px solid rgba(127,255,0,0.2);
+              border-radius: 8px;
+              padding: 28px 24px 24px;
+              text-align: center;
+              box-shadow: 0 0 20px rgba(127,255,0,0.05);
+              height: 100%;
+            ">
+              <div style="font-size: 32px; margin-bottom: 12px;">⚡</div>
+              <span style="
+                display: inline-block;
+                background: rgba(127,255,0,0.1);
+                color: #7fff00;
+                border: 1px solid rgba(127,255,0,0.3);
+                border-radius: 50px;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 3px 12px;
+                margin-bottom: 14px;
+              ">GAS / PC</span>
+              <h5 style="color: #ffffff; font-weight: 700; margin-bottom: 6px;">Ability System Project</h5>
+              <p style="color: rgba(255,255,255,0.5); font-size: 13px; margin-bottom: 16px;">
+                Personal project built on Unreal's Gameplay Ability System — C++ attributes, gameplay effects, and ability cues.
+              </p>
+              <span style="
+                display: inline-block;
+                background: rgba(127,255,0,0.1);
+                color: #7fff00;
+                border: 1px solid rgba(127,255,0,0.3);
+                border-radius: 50px;
+                font-size: 11px;
+                font-weight: 600;
+                padding: 3px 12px;
+              ">🔨 In Development</span>
+            </div>
+          </div><!-- End Card -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+        </div>
+      </div>
+      <!-- END PORTFOLIO PLACEHOLDER -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
+      <!--
+      ORIGINAL PLACEHOLDER ITEMS — commented out, restore/replace with real project cards
 
-          </div><!-- End Portfolio Container -->
+      <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+        <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-app">App</li>
+          <li data-filter=".filter-product">Product</li>
+          <li data-filter=".filter-branding">Branding</li>
+          <li data-filter=".filter-books">Books</li>
+        </ul>
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          ... 12 placeholder items (app-1/2/3, product-1/2/3, branding-1/2/3, books-1/2/3) ...
+        </div>
+      </div>
+      -->
 
         </div>
 
