@@ -708,40 +708,118 @@ END DROPDOWN -->
 
         <!-- ===== PERSONAL PROJECTS ===== -->
         <div id="pf-personal" style="display:none;">
-          <div class="row gy-4 justify-content-center">
+          <div class="row gy-4">
 
-            <div class="col-lg-4 col-md-8 mx-auto">
+            <!-- Card: Modular Save System Plugin -->
+            <div class="col-lg-12 col-md-12" data-aos="fade-up">
               <div style="
                 background: #0e1520;
                 border: 1px solid rgba(127,255,0,0.2);
-                border-radius: 8px;
-                padding: 28px 24px 24px;
-                text-align: center;
-                box-shadow: 0 0 20px rgba(127,255,0,0.05);
-                height: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 32px rgba(127,255,0,0.05);
+                display: flex;
+                flex-wrap: wrap;
               ">
-                <div style="font-size: 32px; margin-bottom: 12px;">⚡</div>
-                <span style="
-                  display: inline-block;
-                  background: rgba(127,255,0,0.1); color: #7fff00;
-                  border: 1px solid rgba(127,255,0,0.3); border-radius: 50px;
-                  font-size: 11px; font-weight: 600; letter-spacing: 1px;
-                  text-transform: uppercase; padding: 3px 12px; margin-bottom: 14px;
-                ">GAS / PC</span>
-                <h5 style="color: #ffffff; font-weight: 700; margin-bottom: 6px;">Ability System Project</h5>
-                <p style="color: rgba(255,255,255,0.5); font-size: 13px; margin-bottom: 16px;">
-                  Personal project built on Unreal's Gameplay Ability System — C++ attributes, gameplay effects, and ability cues.
-                </p>
-                <span style="
-                  display: inline-block;
-                  background: rgba(127,255,0,0.1); color: #7fff00;
-                  border: 1px solid rgba(127,255,0,0.3); border-radius: 50px;
-                  font-size: 11px; font-weight: 600; padding: 3px 12px;
-                ">🔨 In Development</span>
+                <div style="flex: 0 0 100%; padding: 28px 28px 20px;">
+                  <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+                    <span style="
+                      background: rgba(127,255,0,0.1); color: #7fff00;
+                      border: 1px solid rgba(127,255,0,0.3); border-radius: 50px;
+                      font-size: 11px; font-weight: 600; letter-spacing: 1px;
+                      text-transform: uppercase; padding: 3px 12px;
+                    ">Plugin / Tool</span>
+                    <span style="
+                      background: rgba(127,255,0,0.06); color: rgba(127,255,0,0.7);
+                      border: 1px solid rgba(127,255,0,0.2); border-radius: 50px;
+                      font-size: 11px; font-weight: 600; padding: 3px 12px;
+                    ">UE5 &middot; C++ &middot; MIT License</span>
+                    <span style="
+                      background: rgba(0,229,255,0.08); color: rgba(0,229,255,0.8);
+                      border: 1px solid rgba(0,229,255,0.2); border-radius: 50px;
+                      font-size: 11px; font-weight: 600; padding: 3px 12px;
+                    ">v0.1-beta</span>
+                  </div>
+                  <h4 style="color:#ffffff; font-weight:700; margin-bottom:6px; font-size:22px;">Modular Save System</h4>
+                  <p style="color:rgba(255,255,255,0.45); font-size:12px; margin-bottom:16px; font-style:italic;">
+                    UE5 Plugin &middot; GameInstance Subsystem &middot; Blueprint &amp; C++ Compatible
+                  </p>
+                  <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:0;">
+                    Every UE project eventually needs a save system, and most reach for the same boilerplate: load the slot,
+                    cast to the save game class, modify properties, save it back. Modular Save System replaces that ritual
+                    with single function calls per actor — and solves the harder problem of keeping save data valid when
+                    implementations change.
+                  </p>
+                </div>
+
+                <div style="flex: 0 0 100%; padding: 0 28px 28px; border-top: 1px solid rgba(127,255,0,0.08); margin-top: 4px; padding-top: 24px;">
+                  <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:14px;">
+                    <strong style="color:#7fff00;">Three-Layer Architecture:</strong>
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">ISaveableInterface</code>
+                    defines the contract without the subsystem ever casting to a concrete actor type.
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">USaveSubsystem</code>
+                    (a GameInstance Subsystem) is the sole entry point for both C++ and Blueprint users.
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">USaveGameData</code>
+                    is plugin-private — a dumb container holding a
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">TMap&lt;FGuid, FActorSaveData&gt;</code>
+                    that knows nothing about the game world.
+                  </p>
+                  <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:14px;">
+                    <strong style="color:#7fff00;">Per-Actor Versioning:</strong>
+                    Instead of a global version that invalidates the entire save file, each actor carries its own version
+                    number inside <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">FActorSaveData</code> —
+                    a struct wrapper that also satisfies Unreal's no-nested-TMap UPROPERTY restriction.
+                    A format change on one actor doesn't break save data for any other.
+                  </p>
+                  <p style="color:rgba(255,255,255,0.72); font-size:13.5px; line-height:1.75; margin-bottom:20px;">
+                    <strong style="color:#7fff00;">FGuid as the Save Key:</strong>
+                    Actors are identified by <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">ActorGuid</code>,
+                    not by name or class. Names aren't unique.
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">ActorInstanceGuid</code>
+                    is transient and evaluates to zero at runtime.
+                    <code style="background:rgba(127,255,0,0.08); color:#7fff00; padding:1px 5px; border-radius:3px;">ActorGuid</code>
+                    is stable across sessions and compile builds — the only reliable key for persistent actor identification.
+                  </p>
+                  <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px;">
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">UE5</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">C++</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">Blueprints</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">GameInstance Subsystem</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">UInterface</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">USaveGame</span>
+                    <span style="background:#111c2a; color:rgba(255,255,255,0.55); border:1px solid rgba(255,255,255,0.1); border-radius:4px; font-size:11px; padding:3px 9px;">MIT License</span>
+                  </div>
+                  <a href="https://github.com/Kshitij1919/ModularSaveSystem" target="_blank" rel="noopener noreferrer" style="
+                    display:inline-block; background:transparent; color:#7fff00;
+                    border:1px solid rgba(127,255,0,0.5); border-radius:50px;
+                    font-size:13px; font-weight:600; padding:8px 22px;
+                    text-decoration:none; transition: background 0.2s, box-shadow 0.2s;
+                  " onmouseover="this.style.background='rgba(127,255,0,0.1)'; this.style.boxShadow='0 0 16px rgba(127,255,0,0.2)'"
+                     onmouseout="this.style.background='transparent'; this.style.boxShadow='none'">
+                    View on GitHub ↗
+                  </a>
+                </div>
+
               </div>
-            </div>
+            </div><!-- End Card: Modular Save System -->
 
           </div>
+
+          <!--
+          GAS card - re-enable when project is complete
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4 col-md-8 mx-auto">
+              <div style="background:#0e1520; border:1px solid rgba(127,255,0,0.2); border-radius:8px; padding:28px 24px 24px; text-align:center; box-shadow:0 0 20px rgba(127,255,0,0.05); height:100%;">
+                <div style="font-size:32px; margin-bottom:12px;">&#x26A1;</div>
+                <span style="display:inline-block; background:rgba(127,255,0,0.1); color:#7fff00; border:1px solid rgba(127,255,0,0.3); border-radius:50px; font-size:11px; font-weight:600; letter-spacing:1px; text-transform:uppercase; padding:3px 12px; margin-bottom:14px;">GAS / PC</span>
+                <h5 style="color:#ffffff; font-weight:700; margin-bottom:6px;">Ability System Project</h5>
+                <p style="color:rgba(255,255,255,0.5); font-size:13px; margin-bottom:16px;">Personal project built on Unreal's Gameplay Ability System - C++ attributes, gameplay effects, and ability cues.</p>
+                <span style="display:inline-block; background:rgba(127,255,0,0.1); color:#7fff00; border:1px solid rgba(127,255,0,0.3); border-radius:50px; font-size:11px; font-weight:600; padding:3px 12px;">In Development</span>
+              </div>
+            </div>
+          </div>
+          -->
+
         </div><!-- End Personal Projects -->
 
         <!-- ===== RESEARCH & DESIGN ===== -->
