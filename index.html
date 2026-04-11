@@ -91,16 +91,28 @@
         font-size: 16px !important;
       }
     }
+    @keyframes menuPulse {
+      0%   { box-shadow: 0 0 0 0    rgba(0,229,255,0.7); }
+      60%  { box-shadow: 0 0 0 10px rgba(0,229,255,0);   }
+      100% { box-shadow: 0 0 0 0    rgba(0,229,255,0);   }
+    }
+    .header-toggle {
+      width:  48px !important;
+      height: 48px !important;
+      font-size: 26px !important;
+      animation: menuPulse 2.2s ease-out infinite;
+    }
   </style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <span class="header-toggle d-xl-none" style="display:inline-flex; align-items:center; gap:5px; cursor:pointer; padding:6px 12px 6px 8px; background:rgba(0,229,255,0.08); border:1px solid rgba(0,229,255,0.25); border-radius:50px;">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+ <!--   <span class="header-toggle d-xl-none" style="display:inline-flex; align-items:center; gap:5px; cursor:pointer; padding:6px 12px 6px 8px; background:rgba(0,229,255,0.08); border:1px solid rgba(0,229,255,0.25); border-radius:50px;">
     <i class="bi bi-list" style="font-size:24px; color:#00e5ff;"></i>
     <span style="font-size:11px; font-weight:700; letter-spacing:1px; color:#00e5ff; text-transform:uppercase;">Menu</span>
-  </span>
+  </span> -->
 
     <div class="profile-img">
       <img src="https://placehold.co/200x200?text=KC" alt="Kshitij Chandankhede" class="img-fluid rounded-circle">
