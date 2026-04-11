@@ -78,13 +78,29 @@
     #hero p .typed-cursor {
       color: #00e5ff;
     }
+    @media (max-width: 767px) {
+      #hero .container {
+        left: 20px !important;
+        right: 20px;
+        width: calc(100% - 40px) !important;
+      }
+      #hero h2 {
+        font-size: 30px !important;
+      }
+      #hero p {
+        font-size: 16px !important;
+      }
+    }
   </style>
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <span class="header-toggle d-xl-none" style="display:inline-flex; align-items:center; gap:5px; cursor:pointer; padding:6px 12px 6px 8px; background:rgba(0,229,255,0.08); border:1px solid rgba(0,229,255,0.25); border-radius:50px;">
+    <i class="bi bi-list" style="font-size:24px; color:#00e5ff;"></i>
+    <span style="font-size:11px; font-weight:700; letter-spacing:1px; color:#00e5ff; text-transform:uppercase;">Menu</span>
+  </span>
 
     <div class="profile-img">
       <img src="https://placehold.co/200x200?text=KC" alt="Kshitij Chandankhede" class="img-fluid rounded-circle">
@@ -379,7 +395,7 @@ END DROPDOWN -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Systems built for production, personal exploration, and game design research.</p>
-        <p id="pf-tab-desc" style="color:rgba(0,229,255,0.6); font-size:14px; margin-top:4px; font-style:italic; margin-bottom:0;">
+        <p id="pf-tab-desc" style="color:#00e5ff; font-size:15px; font-weight:600; margin-top:6px; font-style:italic; margin-bottom:0; text-shadow:0 0 14px rgba(0,229,255,0.5); letter-spacing:0.02em;">
           Production projects built under contract — systems shipped to real users.
         </p>
       </div>
@@ -919,6 +935,7 @@ END DROPDOWN -->
             btn.style.border = activeStyle.border;
             var desc = document.getElementById('pf-tab-desc');
             if (desc) desc.textContent = descriptions[tab];
+            if (window.AOS) { AOS.refresh(); }
           };
         })();
       </script>
