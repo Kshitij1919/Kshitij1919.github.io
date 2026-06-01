@@ -351,10 +351,12 @@ END DROPDOWN -->
               <h5>Oct 2025 - March 2026</h5>
               <p><em>Cephacon Games, Remote</em></p>
               <ul>
-                <li>Contributed as Gameplay Programmer on a UE5 souls-like action RPG within a 3-person team, shipping to an investor demo milestone.</li>
-                <li>Extended a company-built combat plugin to implement combo sequences, hitbox tuning, and combat balancing, supported by Animation Blueprints integrated with combat states.</li>
-                <li>Built AI combat logic for one of two enemy archetypes using Behavior Trees, Blackboards, Tasks, and Decorators.</li>
-                <li>Engineered a custom audio management plugin replacing direct asset pointers with FName tag-based routing through a centralized Audio Subsystem, with dynamic load/unload and clean C++/Blueprint boundaries.</li>
+                <li>Contributed as Gameplay Programmer on a UE5 souls-like action RPG within a 3-person team, delivering systems and content for an investor demo milestone.</li>
+                <li>Expanded a custom combat framework with combo chains, hitbox tuning, damage balancing, and Animation Blueprint integration to improve combat responsiveness and iteration speed.</li>
+                <li>Developed combat AI for one of the project's enemy archetypes using Behavior Trees, Blackboards, Tasks, and Decorators, enabling designers to iterate on behavior without modifying gameplay code.</li>
+                <li>Engineered a custom Audio Management Plugin that replaced direct asset references with FName-based routing through a centralized Audio Subsystem, reducing dependency management and simplifying audio integration across gameplay systems.</li>
+                <li>Designed Blueprint-friendly systems with clear C++/Blueprint ownership boundaries, allowing designers to configure gameplay and audio behavior independently while keeping core logic maintainable.</li>
+
               </ul>
             </div><!-- End Resume Item -->
 
@@ -363,10 +365,13 @@ END DROPDOWN -->
               <h5>Jan 2025 - Aug 2025</h5>
               <p><em>Nextwhat Games Tech LLP, Hyderabad (Remote)</em></p>
               <ul>
-                <li>Architected C++ authentication &amp; transaction system for a mobile cricket game (closed beta), ensuring secure login flows via backend API integrations.</li>
-                <li>Developed a C++/Blueprint UI framework with reusable widgets, cutting duplicate code by 40% and enabling seamless dev-to-prod environment switching.</li>
-                <li>Optimized performance with selective animation loading for bowlers, reducing memory use by 25% and eliminating bulk asset loads.</li>
-                <li>Implemented dynamic fielder positioning system to create realistic batting pressure.</li>
+                <li>Architected backend-integrated gameplay systems for a mobile cricket title, including authentication, session persistence, player data retrieval, and transaction workflows connecting Unreal Engine to live REST services.</li>
+                <li>Designed a layered API architecture that separated HTTP communication from gameplay and UI logic, reducing coupling and enabling reusable asynchronous workflows through Blueprint-assignable delegates.</li>
+                <li>Developed reusable C++ and Blueprint UI frameworks that reduced duplicate widget logic by 40% and enabled seamless switching between development and production backend environments.</li>
+                <li>Reduced memory consumption by 25% by replacing bulk animation loading with selective on-demand loading workflows, eliminating startup asset load spikes and improving runtime efficiency.</li>
+                <li>Implemented gameplay features and resolved 100+ gameplay, UI, and backend integration issues across multiple project systems throughout production.</li>
+                <li>Collaborated across gameplay, backend integration, UI, and optimization efforts using Unreal Engine 5, C++, REST APIs, JSON serialization, delegates, and software architecture best practices.</li>
+                <li><b>Note: Authentication and real-money gameplay systems were later removed from the public release following regulatory changes in India. Core gameplay remains available on the Google Play Store.</b></li>
               </ul>
             </div><!-- End Resume Item -->
 
@@ -375,9 +380,13 @@ END DROPDOWN -->
               <h5>Aug 2023 - Apr 2024</h5>
               <p><em>Koolgen Interactives, Hyderabad (Remote)</em></p>
               <ul>
-                <li>Built modular combat, locomotion, camera, and stealth systems using UE5 Component architecture and Animation Layers, ensuring scalable 60fps transitions.</li>
-                <li>Showcased game demo at IGDC, engaging 200+ professionals and securing multiple partnership leads.</li>
-                <li>Designed enemy AI using UE5 Behavior Trees and Blackboards for patrol, chase, combat, and search cycles.</li>
+                <li>Owned gameplay systems including combat, locomotion, stealth, camera, animation, and enemy AI for a UE5 action-adventure project showcased publicly at industry events.</li>
+                <li>Built modular gameplay architecture using UE5 Component-based design, allowing individual systems to evolve independently while supporting future content expansion.</li>
+                <li>Developed enemy AI behaviors using Behavior Trees and Blackboards for patrol, search, chase, and combat states, creating extensible behavior flows that supported rapid gameplay iteration.</li>
+                <li>Designed animation architecture using Linked Anim Layers to maintain distinct combat and exploration locomotion states while supporting smooth transitions and maintainable animation workflows.</li>
+                <li>Implemented stealth and assassination mechanics using AI perception, noise-based detection, and directional validation checks, ensuring player intent remained consistent across gameplay interactions.</li>
+                <li>Presented a playable demo at IGDC 2023, demonstrating the project to industry professionals and potential partners.</li>
+                <li><b>Steam page live. Project was showcased publicly but not commercially released.</b></li>
               </ul>
             </div><!-- End Resume Item -->
 
@@ -386,9 +395,10 @@ END DROPDOWN -->
               <h5>Nov 2022 - Jun 2023</h5>
               <p><em>People Tech Group, Hyderabad</em></p>
               <ul>
-                <li>Delivered 3 client HMI prototypes in UE5, enabling interactive 360° car visualizations.</li>
-                <li>Collaborated with a 5-person team on a dynamic speed gauge UI, enhancing automotive scenario visuals.</li>
-                <li>Led GitHub workflow rollout for 8 animators, standardizing version control and boosting adoption by 80%.</li>
+                <li>Delivered three Unreal Engine 5 automotive HMI prototypes featuring interactive 360° vehicle visualization experiences for external clients.</li>
+                <li>Collaborated within a multidisciplinary team to develop dynamic UI systems supporting real-time automotive scenario visualization.</li>
+                <li>Led GitHub adoption across a team of eight animators, establishing version-control workflows, branching practices, and collaboration standards that improved team-wide usage and consistency.</li>
+                <li>Introduced structured source-control processes to teams with limited prior Git experience, improving project organization and reducing asset management friction.</li>
               </ul>
             </div><!-- End Resume Item -->
 
@@ -419,21 +429,21 @@ END DROPDOWN -->
           <button onclick="pfTab('professional', this)" id="pf-btn-professional" style="
             background:rgba(0,229,255,0.1); color:#00e5ff;
             border:1px solid rgba(0,229,255,0.4); border-radius:50px;
-            font-size:13px; font-weight:600; padding:8px 22px;
+            font-size:16px; font-weight:600; padding:8px 22px;
             cursor:pointer; transition:all 0.2s; letter-spacing:0.3px;">
             💼 Professional Work
           </button>
           <button onclick="pfTab('personal', this)" id="pf-btn-personal" style="
             background:transparent; color:rgb(14,21,32);
             border:1px solid rgba(255,255,255,0.18); border-radius:50px;
-            font-size:13px; font-weight:600; padding:8px 22px;
+            font-size:16px; font-weight:600; padding:8px 22px;
             cursor:pointer; transition:all 0.2s; letter-spacing:0.3px;">
             ⚡ Personal Projects
           </button>
           <button onclick="pfTab('research', this)" id="pf-btn-research" style="
             background:transparent; color:rgb(14,21,32);
             border:1px solid rgba(255,255,255,0.18); border-radius:50px;
-            font-size:13px; font-weight:600; padding:8px 22px;
+            font-size:16px; font-weight:600; padding:8px 22px;
             cursor:pointer; transition:all 0.2s; letter-spacing:0.3px;">
             📐 Research &amp; Design
           </button>
@@ -758,7 +768,13 @@ END DROPDOWN -->
                       text-transform: uppercase; padding: 3px 12px;
                     ">Plugin / Tool</span>
                     <span style="
-                      background: rgba(127,255,0,0.06); color: rgba(127,255,0,0.7);
+                      background: rgba(127,255,0,0.1); color: #7fff00;
+                      border: 1px solid rgba(127,255,0,0.3); border-radius: 50px;
+                      font-size: 11px; font-weight: 600; letter-spacing: 1px;
+                      text-transform: uppercase; padding: 3px 12px;
+                    ">Open Source</span>
+                    <span style="
+                      background: rgba(127,255,0,0.06); color: #7fff00;
                       border: 1px solid rgba(127,255,0,0.2); border-radius: 50px;
                       font-size: 11px; font-weight: 600; padding: 3px 12px;
                     ">UE5 &middot; C++ &middot; MIT License</span>
